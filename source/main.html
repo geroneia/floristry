@@ -3,11 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Флористический магазин Весна всегда">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Весна всегда</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/forum/forum-v11-cyrillic-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/forum/forum-v11-cyrillic-regular.woff" as="font" crossorigin="anonymous">
 </head>
 <body>
-  <h1>Hello, World!</h1>
+  <div style="display:none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+  <header class="page-header page-header-nav--opened">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <svg class="page-header__logo-icon" width="158" height="49" role="img" aria-label="Логотип магазина Весна всегда">
+          <use xlink:href="#icon-logo"></use>
+        </svg>
+        <span class="page-header__logo-text">Весна всегда</span>
+      </a>
+      <nav class="page-header__main-nav main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle button" type="button" aria-label="Go to main menu">
+          <svg class="main-nav__toggle-icon" width="28" height="28" role="img" aria-label="Скрыть/показать меню">
+            <use xlink:href="#icon-close-nav"></use>
+          </svg>
+        </button>
+        <ul class="main-nav__list services-list">
+          <li class="services-list__item">
+            <a class="services-list__item-link" href="#">Свадебная флористика</a>
+          </li>
+          <li class="services-list__item">
+            <a class="services-list__item-link" href="#">Букеты на любые мероприятия</a>
+          </li>
+          <li class="services-list__item">
+            <a class="services-list__item-link" href="#">Композиции</a>
+          </li>
+          <li class="services-list__item">
+            <a class="services-list__item-link" href="#">Оформление мероприятий</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="visually-hidden">Флористический магазин «Весна всегда»</h1>
+      <section class="page-header__promo">
+        <h2 class="visually-hidden">Slogan</h2>
+        <p class="page-header__promo-slogan">
+          Флористика с душой
+        </p>
+        <a class="page-header__promo-gallery-link" href="#">Смотреть работы</a>
+        <a class="page-header__promo-catalog-link" href="#">Cмотреть каталог</a>
+      </section>
+      <div class="page-header__social social">
+        <ul class="social__list">
+          <li class="social__item social__item-instagram">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon-inst" width="25" height="25" role="img"
+                aria-label="Мы в Инстаграм">
+                <use xlink:href="#icon-inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item-fb">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon-fb" width="25" height="25" role="img" aria-label="Мы на Facebook">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item-whatsapp">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon-whatsapp" width="25" height="25" role="img"
+                aria-label="Наш Whatsapp">
+                <use xlink:href="#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item-vk">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon-vk" width="25" height="25" role="img" aria-label="Мы ВКонтакте">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper">
+  <main class="main">
+    <section class="main__catalog catalog">
+      <h2 class="catalog__heading">Каталог услуг</h2>
+
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <ul class="page-footer__list variations-list">
+        <li class="variations-list__item">
+          <a class="variations-list__item-link" href="#">Свадебная флористика</a>
+        </li>
+        <li class="variations-list__item">
+          <a class="variations-list__item-link" href="#">Букеты на любые мероприятия</a>
+        </li>
+        <li class="variations-list__item">
+          <a class="variations-list__item-link" href="#">Букеты невесты</a>
+        </li>
+        <li class="variations-list__item">
+          <a class="variations-list__item-link" href="#">Композиции</a>
+        </li>
+        <li class="variations-list__item">
+          <a class="variations-list__item-link" href="#">Оформление мероприятий</a>
+        </li>
+      </ul>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item social__item-instagram">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon-inst" width="25" height="25" role="img"
+                aria-label="Мы в Инстаграм">
+                <use xlink:href="#icon-inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item-fb">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon-fb" width="25" height="25" role="img" aria-label="Мы на Facebook">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item-whatsapp">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon-whatsapp" width="25" height="25" role="img"
+                aria-label="Наш Whatsapp">
+                <use xlink:href="#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item-vk">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon-vk" width="25" height="25" role="img" aria-label="Мы ВКонтакте">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="js/main.js"></script>
 </body>
 </html>
