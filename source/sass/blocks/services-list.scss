@@ -1,0 +1,29 @@
+.services-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    vertical-align: middle;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+    color: $white;
+    font-weight: 400;
+}
+
+@media (min-width: $min-desktop-width) {
+    .services-list {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 122px;
+        font-size: 35px;
+        line-height: 39px;
+        text-transform: uppercase;
+    }
+
+    .services-list__item {
+        margin-top: 70px;
+    }
+
+}

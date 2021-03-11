@@ -1,4 +1,108 @@
+.page-header__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    vertical-align: middle;
+}
+
 .page-header__logo-icon {
+    width: 158px;
+    height: 49px;
     fill:  none;
     stroke: #ffffff;
+}
+
+.page-header--nav-opened {
+    background-image: none;
+    .page-header__promo {
+        display: none;
+    }
+
+    .page-header__logo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 93px;
+    }
+}
+.page-header__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.page-header__social {
+    position: absolute;
+    bottom: 95px;
+    left: 5%;
+}
+
+@media (min-width: $min-desktop-width) {
+    .page-header {
+      min-height: 1044px;
+      }
+
+    .page-header__wrapper {
+        min-height: 1044px;
+        max-width: $max-desktop-width;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 4.7%;
+        padding-right: 4.7%;
+        padding-bottom: 95px;
+    }
+
+    .page-header__social-list {
+        flex-direction: column;
+        width: 25px;
+        height: 172px;
+    }
+
+    .page-header--nav-opened {
+        background-image: none;
+
+        .page-header__logo {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 93px;
+            width: 158px;
+            height: 49px;
+        }
+    }
+
+    .page-header--nav-closed {
+        position: relative;
+        background-image: url("../img/main-bg-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+        background-size: 100% auto;
+    
+        @media (min-resolution: $retina-dpi),
+          (min-resolution: $retina-dppx) {
+          background-image: url("../img/main-bg-desktop@2x.jpg");
+          background-repeat: no-repeat;
+          background-position: 0 50%;
+          background-size: 100% auto;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            height: 120px;
+            width: 100%;
+            right: 0;
+            bottom: 0;
+            background-color: $transparent;
+            background-image: linear-gradient(to top, $background-color 0%, $transparent 100%);
+        }
+
+        .page-header__social {
+            bottom: 151px;
+        }
+    }
+
 }

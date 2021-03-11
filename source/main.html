@@ -14,24 +14,17 @@
   <div style="display:none;">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
-  <header class="page-header page-header-nav--opened">
+  <header class="page-header page-header--nav-closed">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
         <svg class="page-header__logo-icon" width="158" height="49" role="img" aria-label="Логотип магазина Весна всегда">
           <use xlink:href="#icon-logo"></use>
         </svg>
-        <span class="page-header__logo-text">Весна всегда</span>
       </a>
-      <nav class="page-header__main-nav main-nav main-nav--opened main-nav--nojs">
-        <button class="main-nav__toggle button" type="button" aria-label="Go to main menu">
-          <svg class="main-nav__toggle-icon" width="28" height="28" role="img" aria-label="Скрыть/показать меню">
-            <use xlink:href="#icon-close-nav"></use>
-          </svg>
+      <nav class="page-header__main-nav main-nav main-nav--closed">
+        <button class="main-nav__toggle main-nav__toggle--closed button" type="button" aria-label="Меню"><span class="main-nav__toggle-text">Меню</span>
         </button>
         <ul class="main-nav__list services-list">
-          <li class="services-list__item">
-            <a class="services-list__item-link" href="#">Свадебная флористика</a>
-          </li>
           <li class="services-list__item">
             <a class="services-list__item-link" href="#">Букеты на любые мероприятия</a>
           </li>
@@ -53,7 +46,7 @@
         <a class="page-header__promo-catalog-link" href="#">Cмотреть каталог</a>
       </section>
       <div class="page-header__social social">
-        <ul class="social__list">
+        <ul class="page-header__social-list social__list">
           <li class="social__item social__item-instagram">
             <a class="social__link" href="#">
               <svg class="social__icon social__icon-inst" width="25" height="25" role="img"
