@@ -9,9 +9,50 @@
   // outline: 1px solid red;
 }
 
+.social__icon {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: $min-desktop-width) {
   .social__item {
     width: 25px;
     height: 25px;
+  }
+}
+
+@media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+  .social__list {
+    flex-direction: row;
+    vertical-align: middle;
+  }
+
+  .social__item {
+    position: relative;
+    width: 29px;
+    height: 29px;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      top: -50%;
+      left: -50%;
+      width: 55px;
+      height: 55px;
+      background-color: $background-color;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+
+  .social__icon {
+    width: 29px;
+    height: 29px;
+  }
+
+  .social__icon-vk {
+    height: 30px;
   }
 }
