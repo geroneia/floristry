@@ -138,3 +138,50 @@
     }
   }
 }
+
+@media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
+  .main-nav__toggle-text {
+    display: none;
+  }
+
+  .main-nav__toggle--opened {
+    bottom: 543px;
+    right: 8px;
+    width: 21px;
+    height: 21px;
+
+    &::before {
+      top: 15px;
+      left: -4px;
+      width: 29px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 15px;
+      left: -5px;
+      width: 29px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .main-nav__toggle--closed {
+    top: -29px;
+    right: 14px;
+    width: 37px;
+    height: 35px;
+    padding: 0;
+
+    &::before {
+      top: 10px;
+      left: 0;
+      width: 37px;
+    }
+
+    &::after {
+      top: 20px;
+      left: 0;
+      width: 37px;
+    }
+  }
+}

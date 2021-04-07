@@ -67,3 +67,28 @@
     }
   }
 }
+
+@media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
+  .services-list {
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 78px;
+  }
+
+  .services-list__item {
+    margin-top: 48px;
+  }
+
+  .services-list__item-link {
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: calc(1em / 11);
+    text-transform: uppercase;
+
+    &:hover {
+      font-size: 25px;
+      line-height: 28px;
+    }
+  }
+}
