@@ -9,6 +9,14 @@
   // outline: 1px solid red;
 }
 
+.social__list-footer {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin-left: auto;
+  min-height: 26px;
+}
+
 .social__icon {
   width: 100%;
   height: 100%;
@@ -18,6 +26,17 @@
   .social__item {
     width: 25px;
     height: 25px;
+  }
+
+  .social__list-footer .social__item {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .social__list-footer .social__item-vk {
+    height: 26px;
   }
 }
 
