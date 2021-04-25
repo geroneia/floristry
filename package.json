@@ -19,7 +19,7 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "3.0.2",
-    "gulp-webp": "^4.0.1",
+    "gulp-webp": "4.0.1",
     "pixel-glass": "^1.0.13",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.10.x",
@@ -46,6 +46,10 @@
     "source/js/**/*.js",
     "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
+  ],
+  "typeRoots": [
+    "./typings",
+    "./node_modules/@types/"
   ],
   "engines": {
     "node": "8.15"
