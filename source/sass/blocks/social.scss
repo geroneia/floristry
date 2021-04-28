@@ -22,6 +22,86 @@
   height: 100%;
 }
 
+#icon-inst {
+  fill: none;
+  rect {
+    stroke:  white;
+    fill: none;
+  }
+
+  circle {
+    fill: white;
+  }
+
+  rect+circle {
+    stroke:  white;
+    fill: none;
+  }
+}
+
+#icon-inst:hover {
+  fill: $background-color;
+  rect {
+    fill: white;
+  }
+
+  circle {
+    fill: $background-color;
+  }
+
+  rect+circle {
+    stroke:  $background-color;
+    fill: $background-color;
+  }
+}
+
+#icon-fb {
+  rect {
+    stroke: white;
+    fill: none;
+  }
+  path {
+    fill: white;
+  }
+}
+
+#icon-fb:hover {
+  rect {
+    fill: white;
+  }
+  path {
+    fill: $background-color;
+  }
+}
+
+
+.social__link-whatsapp:hover {
+  background-color: white;
+  mask-image: url('../img/image (1).svg');
+}
+
+#icon-vk {
+  fill: none;
+  rect {
+    stroke: white;
+    fill: none;
+  }
+  path {
+    fill: white;
+  }
+}
+
+#icon-vk:hover {
+  fill: white;
+
+  rect {
+    fill: white;
+  }
+  path {
+    fill: $background-color;
+  }
+}
+
 @media (min-width: $min-desktop-width) {
   .social__item {
     width: 25px;
@@ -75,6 +155,26 @@
   .social__icon-vk {
     height: 30px;
   }
+
+  .social__list-footer .social__item {
+    width: 25px;
+    height: 25px;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+      height: 25px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .social__list-footer .social__icon {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 @media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
@@ -106,5 +206,25 @@
   .social__icon {
     width: 18px;
     height: 18px;
+  }
+
+  .social__list-footer .social__item {
+    width: 25px;
+    height: 25px;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+      height: 25px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .social__list-footer .social__icon {
+    width: 25px;
+    height: 25px;
   }
 }

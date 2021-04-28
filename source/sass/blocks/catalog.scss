@@ -3,10 +3,18 @@
 }
 
 .catalog__cathegory-list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   counter-reset: item;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: $white;
+  }
 }
 
 .catalog__cathegory-description {
@@ -162,6 +170,12 @@
     padding-right: 0;
     padding-left: 0;
 
+    &::before {
+      width: 86px;
+      height: 1px;
+      top: -88px;
+      left: calc(50% - 86px / 2);
+    }
     // outline: 1px solid blue;
   }
 
