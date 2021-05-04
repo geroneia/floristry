@@ -9,6 +9,13 @@
   // outline: 1px solid red;
 }
 
+.social__item {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  // outline: 1px solid green;
+}
+
 .social__list-footer {
   flex-direction: row;
   flex-wrap: nowrap;
@@ -17,90 +24,139 @@
   min-height: 26px;
 }
 
-.social__icon {
-  width: 100%;
-  height: 100%;
+.social__link::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
 }
 
-#icon-inst {
-  fill: none;
-  rect {
-    stroke:  white;
-    fill: none;
-  }
-
-  circle {
-    fill: white;
-  }
-
-  rect+circle {
-    stroke:  white;
-    fill: none;
-  }
+.social__link-instagram::after {
+  background-image: url('../img/instagram.svg');
 }
 
-#icon-inst:hover {
-  fill: $background-color;
-  rect {
-    fill: white;
-  }
-
-  circle {
-    fill: $background-color;
-  }
-
-  rect+circle {
-    stroke:  $background-color;
-    fill: $background-color;
-  }
-}
-
-#icon-fb {
-  rect {
-    stroke: white;
-    fill: none;
-  }
-  path {
-    fill: white;
-  }
-}
-
-#icon-fb:hover {
-  rect {
-    fill: white;
-  }
-  path {
-    fill: $background-color;
-  }
+.social__link-instagram:hover::after {
+  background-image: url('../img/instagram-hover.svg');
 }
 
 
-.social__link-whatsapp:hover {
-  background-color: white;
-  mask-image: url('../img/image (1).svg');
+.social__link-fb::after {
+  background-image: url('../img/fb.svg');
 }
 
-#icon-vk {
-  fill: none;
-  rect {
-    stroke: white;
-    fill: none;
-  }
-  path {
-    fill: white;
-  }
+.social__link-fb:hover::after {
+  background-image: url('../img/fb-hover.svg');
 }
 
-#icon-vk:hover {
-  fill: white;
 
-  rect {
-    fill: white;
-  }
-  path {
-    fill: $background-color;
-  }
+.social__link-whatsapp::after {
+  background-image: url('../img/whatsapp.svg');
 }
+
+.social__link-whatsapp:hover::after {
+  background-image: url('../img/whatsapp-hover.svg');
+}
+
+
+.social__link-vk::after {
+  background-image: url('../img/vk.svg');
+}
+
+.social__link-vk:hover::after {
+  background-image: url('../img/vk-hover.svg');
+}
+
+// .social__icon {
+//   width: 100%;
+//   height: 100%;
+// }
+
+// #icon-inst {
+//   fill: none;
+//   rect {
+//     stroke:  white;
+//     fill: none;
+//   }
+
+//   circle {
+//     fill: white;
+//   }
+
+//   rect+circle {
+//     stroke:  white;
+//     fill: none;
+//   }
+// }
+
+// #icon-inst:hover {
+//   fill: $background-color;
+//   rect {
+//     fill: white;
+//   }
+
+//   circle {
+//     fill: $background-color;
+//   }
+
+//   rect+circle {
+//     stroke:  $background-color;
+//     fill: $background-color;
+//   }
+// }
+
+// #icon-fb {
+//   rect {
+//     stroke: white;
+//     fill: none;
+//   }
+//   path {
+//     fill: white;
+//   }
+// }
+
+// .social__link:hover {
+//   .social__icon-fb rect {
+//     fill: white;
+//   }
+//   .social__icon-fb path {
+//     fill: $background-color;
+//   }
+// }
+
+// #icon-whatsapp {
+//   path {
+//     stroke: #ffffff;
+//   }
+  
+// }
+
+// #icon-vk {
+//   fill: none;
+//   rect {
+//     stroke: white;
+//     fill: none;
+//   }
+//   path {
+//     fill: white;
+//   }
+// }
+
+// #icon-vk:hover {
+//   fill: white;
+
+//   rect {
+//     fill: white;
+//   }
+//   path {
+//     fill: $background-color;
+//   }
+// }
 
 @media (min-width: $min-desktop-width) {
   .social__item {
