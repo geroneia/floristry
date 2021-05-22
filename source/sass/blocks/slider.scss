@@ -1,0 +1,10 @@
+@media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+  .slider__item:nth-child(3),
+  .slider__item:nth-child(4) {
+    display: none;
+  }
+
+  .slider__item:nth-child(2) {
+    margin-right: 0;
+  }
+}

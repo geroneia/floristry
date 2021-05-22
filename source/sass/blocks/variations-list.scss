@@ -11,8 +11,9 @@
 .variations-list__item-link {
   color: $pale-white-font;
 
-  &:hover, &:active {
-  color: $white;
+  &:hover,
+  &:active {
+    color: $white;
   }
 }
 

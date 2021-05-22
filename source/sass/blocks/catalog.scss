@@ -176,6 +176,7 @@
       top: -88px;
       left: calc(50% - 86px / 2);
     }
+
     // outline: 1px solid blue;
   }
 
@@ -194,5 +195,129 @@
     &:nth-of-type(4) {
       margin-right: 0;
     }
+  }
+}
+
+@media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+  .catalog {
+    flex-direction: column;
+    padding-top: 100px;
+    margin-bottom: 133px;
+  }
+
+  .catalog__heading {
+    display: block;
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    font-family: $font;
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: 400;
+    color: $white;
+    letter-spacing: calc(1em / 16);
+    text-transform: uppercase;
+  }
+
+  .catalog__cathegory-list {
+    flex-direction: row;
+    justify-content: flex-start;
+    vertical-align: top;
+    width: 90%;
+    min-height: 450px;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 52px;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+
+    &::before {
+      width: 86px;
+      height: 2px;
+      top: -32px;
+      left: calc(50% - 56px);
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 63px;
+      height: 3px;
+      background-color: $white;
+      border-radius: 20%;
+      bottom: -32px;
+      left: calc(50% - 69px);
+      box-shadow: 75px 0 0 0 rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .catalog__cathegory-img-wrap {
+    min-height: 450px;
+    width: 100%;
+  }
+
+  .catalog__cathegory-description {
+    width: 47.9%;
+    height: 100%;
+    margin-right: 4%;
+
+    &:hover {
+      .catalog__cathegory-name {
+        bottom: 90px;
+      }
+    }
+
+    &::before {
+      top: 42px;
+      left: 21px;
+    }
+
+    &::after {
+      top: 53px;
+      left: 54px;
+    }
+
+    &:hover::before {
+      transform: translateX(80px);
+    }
+
+    &:hover::after {
+      left: 20px;
+      animation: 0.4s linear 0s 1 normal move_line;
+    }
+  }
+
+  .catalog__cathegory-link {
+    left: 21px;
+    bottom: 20px;
+  }
+
+  @keyframes move_line {
+    from {
+      left: 30px;
+    }
+
+    to {
+      left: 20px;
+    }
+  }
+
+  @keyframes move_text {
+    from {
+      bottom: 70px;
+    }
+
+    to {
+      bottom: 90px;
+    }
+  }
+
+  .catalog__cathegory-name {
+
+    left: 20px;
+    bottom: 15px;
   }
 }
