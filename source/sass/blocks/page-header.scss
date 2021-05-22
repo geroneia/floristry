@@ -56,7 +56,26 @@
 
 @media (min-width: $min-desktop-width) {
   .page-header {
-    min-height: 1044px;
+    background-image: url("../img/main-bg-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/main-bg-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+    }
+  }
+
+  .page-header-bridal {
+    background-image: none;
+
+    .page-header__wrapper {
+      min-height: 213px;
+    }
   }
 
   .page-header__promo-gallery-span {
@@ -107,6 +126,7 @@
     padding-bottom: 59px;
   }
 
+
   .page-header__social-list {
     flex-direction: column;
     width: 25px;
@@ -127,18 +147,7 @@
 
   .page-header--nav-closed {
     position: relative;
-    background-image: url("../img/main-bg-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
 
-    @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
-      background-image: url("../img/main-bg-desktop@2x.jpg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: cover;
-    }
 
     &::after {
       position: absolute;

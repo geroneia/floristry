@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Флористический магазин Весна всегда">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Весна всегда</title>
+  <title>Букеты невесты и свадебное оформление</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/forum/forum-v11-cyrillic-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/forum/forum-v11-cyrillic-regular.woff" as="font" crossorigin="anonymous">
 </head>
-<body>
+
+<body class="body body-bridal">
   <div style="display:none;">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close-nav" viewBox="0 0 30 30">
 <path d="M29 29L1 1M1 29L29 1L1 29Z" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -28,9 +30,9 @@
 <path d="M3.89061 21.2727L4.36495 21.4308L4.453 21.1666L4.2748 20.9527L3.89061 21.2727ZM2.38889 25.7778L1.91454 25.6197L1.63528 26.4575L2.49735 26.2659L2.38889 25.7778ZM8.03515 24.5231L8.25403 24.0736L8.09708 23.9972L7.92669 24.035L8.03515 24.5231ZM25.5 13.2778C25.5 19.9052 20.1274 25.2778 13.5 25.2778V26.2778C20.6797 26.2778 26.5 20.4575 26.5 13.2778H25.5ZM13.5 1.27783C20.1274 1.27783 25.5 6.65042 25.5 13.2778H26.5C26.5 6.09813 20.6797 0.277832 13.5 0.277832V1.27783ZM1.5 13.2778C1.5 6.65042 6.87258 1.27783 13.5 1.27783V0.277832C6.3203 0.277832 0.5 6.09813 0.5 13.2778H1.5ZM4.2748 20.9527C2.54195 18.8722 1.5 16.1973 1.5 13.2778H0.5C0.5 16.4397 1.62947 19.3391 3.50642 21.5927L4.2748 20.9527ZM2.86323 25.936L4.36495 21.4308L3.41627 21.1146L1.91454 25.6197L2.86323 25.936ZM7.92669 24.035L2.28042 25.2898L2.49735 26.2659L8.14362 25.0112L7.92669 24.035ZM13.5 25.2778C11.6178 25.2778 9.83822 24.8449 8.25403 24.0736L7.81628 24.9727C9.53387 25.8089 11.4629 26.2778 13.5 26.2778V25.2778Z" fill="white"></path>
 </symbol></svg>
   </div>
-  <header class="page-header page-header--nav-closed page-header--nojs">
+  <header class="page-header page-header-bridal page-header--nav-closed page-header--nojs">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo" href="compositions.html">
         <svg class="page-header__logo-icon" width="158" height="49" role="img" aria-label="Логотип магазина Весна всегда">
           <use xlink:href="#icon-logo"></use>
         </svg>
@@ -56,181 +58,255 @@
           </li>
         </ul>
       </nav>
-      <h1 class="visually-hidden">Флористический магазин «Весна всегда»</h1>
-      <section class="page-header__promo">
-        <h2 class="visually-hidden">Slogan</h2>
-        <p class="page-header__promo-slogan">
-          Флористика с душой
-        </p>
-        <a class="page-header__promo-gallery-link button" href="#">Смотреть <span class="page-header__promo-gallery-span">работы</span></a>
-        <a class="page-header__promo-catalog-link scroll-link" href="#"><span class="page-header__promo-catalog-span">Cмотреть каталог</span></a>
-        <a class="page-header__promo-button scroll-link" href="#" tabindex="0" aria-label="Перейти к просмотру каталога"></a>
-      </section>
-      <div class="page-header__social social">
-        <ul class="page-header__social-list social__list">
-          <li class="social__item social__item-instagram">
-            <a class="social__link social__link-instagram" href="#">
-              <!-- <svg class="social__icon social__icon-inst" width="25" height="25" role="img"
-                aria-label="Мы в Инстаграм">
-                <use xlink:href="#icon-inst"></use>
-              </svg> -->
-            </a>
-          </li>
-          <li class="social__item social__item-fb">
-            <a class="social__link social__link-fb" href="#">
-              <!-- <svg class="social__icon social__icon-fb" width="25" height="25" role="img" aria-label="Мы на Facebook">
-                <use xlink:href="#icon-fb"></use>
-              </svg> -->
-            </a>
-          </li>
-          <li class="social__item social__item-whatsapp">
-            <a class="social__link social__link-whatsapp" href="#">
-              <!-- <svg class="social__icon social__icon-whatsapp" width="25" height="25" role="img"
-                aria-label="Наш Whatsapp">
-                <use xlink:href="#icon-whatsapp"></use>
-              </svg> -->
-            </a>
-          </li>
-          <li class="social__item social__item-vk">
-            <a class="social__link social__link-vk" href="#">
-              <!-- <svg class="social__icon social__icon-vk" width="25" height="25" role="img" aria-label="Мы ВКонтакте">
-                <use xlink:href="#icon-vk"></use>
-              </svg> -->
-            </a>
-          </li>
-        </ul>
-      </div>
+      <h1 class="visually-hidden">Что мы умеем</h1>
     </div>
   </header>
   <div class="page-wrapper">
-  <main class="main" id="main">
-    <section class="main__catalog catalog">
-      <h2 class="catalog__heading">Каталог услуг</h2>
-        <ol class="catalog__cathegory-list catalog__slider slider">
-          <li class="catalog__cathegory-description slider__item">
-            <picture class="catalog__cathegory-img-wrap">
-                <!-- 1х: 330px*450px; 2x: 660px*900px -->
-                <source media="(min-width: 768px)" type="image/webp" srcset="img/product-card-01-desktop@1x.webp 1x, img/product-card-01-desktop@2x.webp 2x">
-              <!-- 1x: 288px*392px; 2x: 576*784px -->
-              <source type="image/webp" srcset="img/product-card-01-mobile@1x.webp, img/product-card-01-mobile@2x.webp 2x">
+    <main class="main" id="main">
+      <section class="bridal">
+        <h2 class="bridal__heading">Букеты невесты и свадебное оформление</h2>
+        <p class="bridal__description">
+          Свадьба–самое важное событие в жизни молодожен. Поэтому каждый из будущих супругов хочет,
+          чтобы на торжестве все было идеально. Наша компания превзойдет ваши ожидания по красоте, качеству
+          и лояльному ценнику. Обращаясь к нам, вы можете не переживать за оформление вашей свадьбы.
+        </p>
+        <a class="bridal__order-link button" href="#">Заказать</a>
+      </section>
+      <section class="bridal__slider">
+        <ul class="bridal__slider-list">
+          <li class="bridal__slider-item">
+            <picture class="bridal__slider-item-img-wrap">
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/1-bridal-desktop@1x.webp 1x, img/1-bridal-desktop@2x.webp 2x">
 
-              <!-- 1х: 330px*450px; 2x: 660px*900px -->
-              <source media="(min-width: 768px)" srcset="img/product-card-01-desktop@1x.jpg 1x, img/product-card-01-desktop@2x.jpg 2x">
-              <!-- 1x: 288px*392px; 2x: 576*784px -->
-              <img class="catalog__cathegory-img" src="img/product-card-01-mobile@1x.jpg" srcset="img/product-card-01-mobile@2x.jpg 2x" width="288" height="392" alt="Букет из роз в руках">
-              </picture>
-              <p class="catalog__cathegory-name">Букет невесты и свадебное оформление</p>
-              <a class="catalog__cathegory-link" href="bridal.html">Смотреть работы</a>
-          </li>
-          <li class="catalog__cathegory-description slider__item">
-              <picture class="catalog__cathegory-img-wrap">
-                <!-- 1х: 330px*450px; 2x: 660px*900px -->
-                <source media="(min-width: 768px)" type="image/webp" srcset="img/product-card-02-desktop@1x.webp 1x, img/product-card-02-desktop@2x.webp 2x">
-              <!-- 1x: 288px*392px; 2x: 576*784px -->
-              <source type="image/webp" srcset="img/product-card-02-mobile@1x.webp, img/product-card-02-mobile@2x.webp 2x">
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source type="image/webp" srcset="img/1-bridal-tablet@1x.webp, img/1-bridal-tablet@2x.webp 2x">
 
-              <!-- 1х: 330px*450px; 2x: 660px*900px -->
-              <source media="(min-width: 768px)" srcset="img/product-card-02-desktop@1x.jpg 1x, img/product-card-02-desktop@2x.jpg 2x">
-              <!-- 1x: 288px*392px; 2x: 576*784px -->
-              <img class="catalog__cathegory-img" src="img/product-card-023-mobile@1x.jpg" srcset="img/product-card-02-mobile@2x.jpg 2x" width="288" height="392" alt="Букет роз в вазе">
-              </picture>
-              <p class="catalog__cathegory-name">Букеты на торжества</p>
-              <a class="catalog__cathegory-link" href="for-events.html">Смотреть работы</a>
-          </li>
-          <li class="catalog__cathegory-description slider__item">
-              <picture class="catalog__cathegory-img-wrap">
-                <!-- 1х: 330px*450px; 2x: 660px*900px -->
-                <source media="(min-width: 768px)" type="image/webp" srcset="img/product-card-03-desktop@1x.webp 1x, img/product-card-03-desktop@2x.webp 2x">
-              <!-- 1x: 288px*392px; 2x: 576*784px -->
-              <source type="image/webp" srcset="img/product-card-03-mobile@1x.webp, img/product-card-03-mobile@2x.webp 2x">
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <source type="image/webp" srcset="img/1-bridal-mobile@1x.webp, img/1-bridal-mobile@2x.webp 2x">
 
-              <!-- 1х: 330px*450px; 2x: 660px*900px -->
-              <source media="(min-width: 768px)" srcset="img/product-card-03-desktop@1x.jpg 1x, img/product-card-03-desktop@2x.jpg 2x">
-              <!-- 1x: 288px*392px; 2x: 576*784px -->
-              <img class="catalog__cathegory-img" src="img/product-card-03-mobile@1x.jpg" srcset="img/product-card-03-mobile@2x.jpg 2x" width="288" height="392" alt="Цветочная композиция">
-              </picture>
-              <p class="catalog__cathegory-name">Композции</p>
-              <a class="catalog__cathegory-link" href="compositions.html">Смотреть работы</a>
-          </li>
-          <li class="catalog__cathegory-description slider__item">
-              <picture class="catalog__cathegory-img-wrap">
-                <!-- 1х: 330px*450px; 2x: 660px*900px -->
-                <source media="(min-width: 768px)" type="image/webp" srcset="img/product-card-04-desktop@1x.webp 1x, img/product-card-04-desktop@2x.webp 2x">
-              <!-- 1x: 288px*392px; 2x: 576*784px -->
-              <source type="image/webp" srcset="img/product-card-04-mobile@1x.webp, img/product-card-04-mobile@2x.webp 2x">
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" srcset="img/1-bridal-desktop@1x.jpg 1x, img/1-bridal-desktop@2x.jpg 2x">
 
-              <!-- 1х: 330px*450px; 2x: 660px*900px -->
-              <source media="(min-width: 768px)" srcset="img/product-card-04-desktop@1x.jpg 1x, img/product-card-04-desktop@2x.jpg 2x">
-              <!-- 1x: 288px*392px; 2x: 576*784px -->
-              <img class="catalog__cathegory-img" src="img/product-card-04-mobile@1x.jpg" srcset="img/product-card-04-mobile@2x.jpg 2x" width="288" height="392" alt="Стена, украшенная остролистом">
-              </picture>
-              <p class="catalog__cathegory-name">Оформление мероприятий</p>
-              <a class="catalog__cathegory-link" href="events.html">Смотреть работы</a>
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source media="(min-width: 768px)" srcset="img/1-bridal-tablet@1x.jpg 1x, img/1-bridal-tablet@2x.jpg 2x">
+
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <img class="bridal__slider-item-img" src="img/1-bridal-mobile@1x.jpg" srcset="img/1-bridal-mobile@2x.jpg 2x" width="75" height="75" alt="Букеты из роз и полевых цветов в кашпо">
+            </picture>
           </li>
-        </ol>
-    </section>
-    <section class="main__specials specials">
-      <h2 class="specials__heading">Акционные предложения</h2>
-      <p class="specials__descriprion">При заказе свадебного оформления предоставляется скидка на букет невесты и бутоньерку в размере 30%</p>
-      <a class="specials__go-to-order" href="#" tabindex="0">Заказать оформление</a>
-    </section>
-  </main>
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <ul class="page-footer__list variations-list">
-        <li class="variations-list__item">
-          <a class="variations-list__item-link" href="bridal.html">Свадебная флористика</a>
-        </li>
-        <li class="variations-list__item">
-          <a class="variations-list__item-link" href="for-events.html">Букеты на любые мероприятия</a>
-        </li>
-        <li class="variations-list__item">
-          <a class="variations-list__item-link" href="bridal.html">Букеты невесты</a>
-        </li>
-        <li class="variations-list__item">
-          <a class="variations-list__item-link" href="compositions.html">Композиции</a>
-        </li>
-        <li class="variations-list__item">
-          <a class="variations-list__item-link" href="events.html">Оформление мероприятий</a>
-        </li>
-      </ul>
-      <div class="page-footer__social social">
-        <ul class="social__list social__list-footer">
-          <li class="social__item social__item-instagram">
-            <a class="social__link social__link-instagram" href="#">
-              <!-- <svg class="social__icon social__icon-inst" width="25" height="25" role="img"
-                aria-label="Мы в Инстаграм">
-                <use xlink:href="#icon-inst"></use>
-              </svg> -->
-            </a>
+          <li class="bridal__slider-item">
+            <picture class="bridal__slider-item-img-wrap">
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/2-bridal-desktop@1x.webp 1x, img/2-bridal-desktop@2x.webp 2x">
+
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source type="image/webp" srcset="img/2-bridal-tablet@1x.webp, img/2-bridal-tablet@2x.webp 2x">
+
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <source type="image/webp" srcset="img/2-bridal-mobile@1x.webp, img/2-bridal-mobile@2x.webp 2x">
+
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" srcset="img/2-bridal-desktop@1x.jpg 1x, img/2-bridal-desktop@2x.jpg 2x">
+
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source media="(min-width: 768px)" srcset="img/2-bridal-tablet@1x.jpg 1x, img/2-bridal-tablet@2x.jpg 2x">
+
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <img class="bridal__slider-item-img" src="img/2-bridal-mobile@1x.jpg" srcset="img/2-bridal-mobile@2x.jpg 2x" width="75" height="75" alt="Букеты из роз и полевых цветов в кашпо">
+            </picture>
           </li>
-          <li class="social__item social__item-fb">
-            <a class="social__link social__link-fb" href="#">
-              <!-- <svg class="social__icon social__icon-fb" width="25" height="25" role="img" aria-label="Мы на Facebook">
-                <use xlink:href="#icon-fb"></use>
-              </svg> -->
-            </a>
+          <li class="bridal__slider-item">
+            <picture class="bridal__slider-item-img-wrap">
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/3-bridal-desktop@1x.webp 1x, img/3-bridal-desktop@2x.webp 2x">
+
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source type="image/webp" srcset="img/3-bridal-tablet@1x.webp, img/3-bridal-tablet@2x.webp 2x">
+
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <source type="image/webp" srcset="img/3-bridal-mobile@1x.webp, img/3-bridal-mobile@2x.webp 2x">
+
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" srcset="img/3-bridal-desktop@1x.jpg 1x, img/3-bridal-desktop@2x.jpg 2x">
+
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source media="(min-width: 768px)" srcset="img/3-bridal-tablet@1x.jpg 1x, img/3-bridal-tablet@2x.jpg 2x">
+
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <img class="bridal__slider-item-img" src="img/3-bridal-mobile@1x.jpg" srcset="img/3-bridal-mobile@2x.jpg 2x" width="75" height="75" alt="Букеты из роз и полевых цветов в кашпо">
+            </picture>
           </li>
-          <li class="social__item social__item-whatsapp">
-            <a class="social__link social__link-whatsapp" href="#">
-              <!-- <svg class="social__icon social__icon-whatsapp" width="25" height="25" role="img"
-                aria-label="Наш Whatsapp">
-                <use xlink:href="#icon-whatsapp"></use>
-              </svg> -->
-            </a>
+          <li class="bridal__slider-item">
+            <picture class="bridal__slider-item-img-wrap">
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/4-bridal-desktop@1x.webp 1x, img/4-bridal-desktop@2x.webp 2x">
+
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source type="image/webp" srcset="img/4-bridal-tablet@1x.webp, img/4-bridal-tablet@2x.webp 2x">
+
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <source type="image/webp" srcset="img/4-bridal-mobile@1x.webp, img/4-bridal-mobile@2x.webp 2x">
+
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" srcset="img/4-bridal-desktop@1x.jpg 1x, img/4-bridal-desktop@2x.jpg 2x">
+
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source media="(min-width: 768px)" srcset="img/4-bridal-tablet@1x.jpg 1x, img/4-bridal-tablet@2x.jpg 2x">
+
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <img class="bridal__slider-item-img" src="img/4-bridal-mobile@1x.jpg" srcset="img/4-bridal-mobile@2x.jpg 2x" width="75" height="75" alt="Букеты из роз и полевых цветов в кашпо">
+            </picture>
           </li>
-          <li class="social__item social__item-vk">
-            <a class="social__link social__link-vk" href="#">
-              <!-- <svg class="social__icon social__icon-vk" width="25" height="25" role="img" aria-label="Мы ВКонтакте">
-                <use xlink:href="#icon-vk"></use>
-              </svg> -->
-            </a>
+          <li class="bridal__slider-item">
+            <picture class="bridal__slider-item-img-wrap">
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/5-bridal-desktop@1x.webp 1x, img/5-bridal-desktop@2x.webp 2x">
+
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source type="image/webp" srcset="img/5-bridal-tablet@1x.webp, img/5-bridal-tablet@2x.webp 2x">
+
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <source type="image/webp" srcset="img/5-bridal-mobile@1x.webp, img/5-bridal-mobile@2x.webp 2x">
+
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" srcset="img/5-bridal-desktop@1x.jpg 1x, img/5-bridal-desktop@2x.jpg 2x">
+
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source media="(min-width: 768px)" srcset="img/5-bridal-tablet@1x.jpg 1x, img/5-bridal-tablet@2x.jpg 2x">
+
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <img class="bridal__slider-item-img" src="img/5-bridal-mobile@1x.jpg" srcset="img/5-bridal-mobile@2x.jpg 2x" width="75" height="75" alt="Букеты из роз и полевых цветов в кашпо">
+            </picture>
+          </li>
+          <li class="bridal__slider-item">
+            <picture class="bridal__slider-item-img-wrap">
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/6-bridal-desktop@1x.webp 1x, img/6-bridal-desktop@2x.webp 2x">
+
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source type="image/webp" srcset="img/6-bridal-tablet@1x.webp, img/6-bridal-tablet@2x.webp 2x">
+
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <source type="image/webp" srcset="img/6-bridal-mobile@1x.webp, img/6-bridal-mobile@2x.webp 2x">
+
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" srcset="img/6-bridal-desktop@1x.jpg 1x, img/6-bridal-desktop@2x.png 2x">
+
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source media="(min-width: 768px)" srcset="img/6-bridal-tablet@1x.jpg 1x, img/6-bridal-tablet@2x.jpg 2x">
+
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <img class="bridal__slider-item-img" src="img/6-bridal-mobile@1x.jpg" srcset="img/6-bridal-mobile@2x.jpg 2x" width="75" height="75" alt="Букеты из роз и полевых цветов в кашпо">
+            </picture>
+          </li>
+          <li class="bridal__slider-item">
+            <picture class="bridal__slider-item-img-wrap">
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/7-bridal-desktop@1x.webp 1x, img/7-bridal-desktop@2x.webp 2x">
+
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source type="image/webp" srcset="img/7-bridal-tablet@1x.webp, img/7-bridal-tablet@2x.webp 2x">
+
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <source type="image/webp" srcset="img/7-bridal-mobile@1x.webp, img/7-bridal-mobile@2x.webp 2x">
+
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" srcset="img/7-bridal-desktop@1x.jpg 1x, img/7-bridal-desktop@2x.jpg 2x">
+
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source media="(min-width: 768px)" srcset="img/7-bridal-tablet@1x.jpg 1x, img/7-bridal-tablet@2x.jpg 2x">
+
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <img class="bridal__slider-item-img" src="img/7-bridal-mobile@1x.jpg" srcset="img/7-bridal-mobile@2x.jpg 2x" width="75" height="75" alt="Букеты из роз и полевых цветов в кашпо">
+            </picture>
+          </li>
+          <li class="bridal__slider-item">
+            <picture class="bridal__slider-item-img-wrap">
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/8-bridal-desktop@1x.webp 1x, img/8-bridal-desktop@2x.webp 2x">
+
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source type="image/webp" srcset="img/8-bridal-tablet@1x.webp, img/8-bridal-tablet@2x.webp 2x">
+
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <source type="image/webp" srcset="img/8-bridal-mobile@1x.webp, img/8-bridal-mobile@2x.webp 2x">
+
+              <!-- 1х: 123px*123px; 2x: 246px*246px -->
+              <source media="(min-width: 768px)" srcset="img/8-bridal-desktop@1x.jpg 1x, img/8-bridal-desktop@2x.jpg 2x">
+
+              <!-- 1x: 145px*145px; 2x: 290*290px -->
+              <source media="(min-width: 768px)" srcset="img/8-bridal-tablet@1x.jpg 1x, img/8-bridal-tablet@2x.jpg 2x">
+
+              <!-- 1x: 75px*75px; 2x: 150*150px -->
+              <img class="bridal__slider-item-img" src="img/8-bridal-mobile@1x.jpg" srcset="img/8-bridal-mobile@2x.jpg 2x" width="75" height="75" alt="Букеты из роз и полевых цветов в кашпо">
+            </picture>
           </li>
         </ul>
+        <a class="bridal__instagram-link">Больше фотографий в профиле
+          <svg class="social__icon social__icon-inst" width="25" height="25" role="img" aria-label="Мы в Инстаграм">
+            <use xlink:href="#icon-inst"></use>
+          </svg>
+        </a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <ul class="page-footer__list variations-list">
+          <li class="variations-list__item">
+            <a class="variations-list__item-link" href="bridal.html">Свадебная флористика</a>
+          </li>
+          <li class="variations-list__item">
+            <a class="variations-list__item-link" href="for-events.html">Букеты на любые мероприятия</a>
+          </li>
+          <li class="variations-list__item">
+            <a class="variations-list__item-link" href="bridal.html">Букеты невесты</a>
+          </li>
+          <li class="variations-list__item">
+            <a class="variations-list__item-link" href="compositions.html">Композиции</a>
+          </li>
+          <li class="variations-list__item">
+            <a class="variations-list__item-link" href="events.html">Оформление мероприятий</a>
+          </li>
+        </ul>
+        <div class="page-footer__social social">
+          <ul class="social__list social__list-footer">
+            <li class="social__item social__item-instagram">
+              <a class="social__link social__link-instagram" href="#">
+                <!-- <svg class="social__icon social__icon-inst" width="25" height="25" role="img"
+                  aria-label="Мы в Инстаграм">
+                  <use xlink:href="#icon-inst"></use>
+                </svg> -->
+              </a>
+            </li>
+            <li class="social__item social__item-fb">
+              <a class="social__link social__link-fb" href="#">
+                <!-- <svg class="social__icon social__icon-fb" width="25" height="25" role="img" aria-label="Мы на Facebook">
+                  <use xlink:href="#icon-fb"></use>
+                </svg> -->
+              </a>
+            </li>
+            <li class="social__item social__item-whatsapp">
+              <a class="social__link social__link-whatsapp" href="#">
+                <!-- <svg class="social__icon social__icon-whatsapp" width="25" height="25" role="img"
+                  aria-label="Наш Whatsapp">
+                  <use xlink:href="#icon-whatsapp"></use>
+                </svg> -->
+              </a>
+            </li>
+            <li class="social__item social__item-vk">
+              <a class="social__link social__link-vk" href="#">
+                <!-- <svg class="social__icon social__icon-vk" width="25" height="25" role="img" aria-label="Мы ВКонтакте">
+                  <use xlink:href="#icon-vk"></use>
+                </svg> -->
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   </div>
   <script src="js/script.js"></script>
 </body>
+
 </html>
