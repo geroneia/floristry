@@ -255,6 +255,14 @@
     vertical-align: middle;
   }
 
+  .social__link::after {
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+  }
+
   .social__item {
     position: relative;
     width: 18px;
@@ -292,6 +300,14 @@
 
     &::before {
       display: none;
+    }
+
+    .social__link::after {
+      width: 25px;
+      height: 25px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 25px 25px;
     }
   }
 
